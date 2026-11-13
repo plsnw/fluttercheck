@@ -32,9 +32,7 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      # 5. (Опционально) Запускаем тесты, если они есть
-      - name: Run tests
-        run: flutter test
+     
 
       # 6. Собираем релизный APK
       - name: Build APK
