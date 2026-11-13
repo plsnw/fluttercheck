@@ -27,7 +27,12 @@ jobs:
         with:
           channel: 'stable'
           cache: true
-
+      # 4. клиним
+      - name: Install dependencies
+        run: flutter clean      
+      # 4. create!!!!!!!!!!!!!!!!!      
+      - name: Install dependencies
+        run: flutter create .
       # 4. Загружаем зависимости
       - name: Install dependencies
         run: flutter pub get
